@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Mini CRM Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <h2>🚀 Mini CRM</h2>
+
+        <ul>
+
+            <li>
+                <i class="fas fa-chart-line"></i>
+                Dashboard
+            </li>
+
+            <li>
+                <i class="fas fa-users"></i>
+                Leads
+            </li>
+
+            <li>
+                <i class="fas fa-chart-pie"></i>
+                Reports
+            </li>
+
+        </ul>
+
+        <button id="darkModeBtn">
+            🌙 Dark Mode
+        </button>
+
+        <button
+        onclick="logout()"
+        id="logoutBtn">
+            🚪 Logout
+        </button>
+
+    </div>
+
+    <!-- MAIN CONTENT -->
+
+    <div class="main">
+
+        <h1>
+            Client Lead Management System
+        </h1>
+
+        <!-- STATS -->
+
+        <div class="stats">
+
+            <div class="card">
+                <h3>Total Leads</h3>
+                <p id="totalLeads">0</p>
+            </div>
+
+            <div class="card new">
+                <h3>New</h3>
+                <p id="newLeads">0</p>
+            </div>
+
+            <div class="card contacted">
+                <h3>Contacted</h3>
+                <p id="contactedLeads">0</p>
+            </div>
+
+            <div class="card converted">
+                <h3>Converted</h3>
+                <p id="convertedLeads">0</p>
+            </div>
+
+        </div>
+
+        <!-- SEARCH + FILTER -->
+
+        <div class="toolbar">
+
+            <input
+            type="text"
+            id="search"
+            placeholder="🔍 Search Leads">
+
+            <select id="filterStatus">
+
+                <option value="all">
+                    All Status
+                </option>
+
+                <option value="new">
+                    New
+                </option>
+
+                <option value="contacted">
+                    Contacted
+                </option>
+
+                <option value="converted">
+                    Converted
+                </option>
+
+            </select>
+
+        </div>
+
+        <!-- ADD LEAD FORM -->
+
+        <form id="leadForm">
+
+            <input
+            type="text"
+            id="name"
+            placeholder="Client Name"
+            required>
+
+            <input
+            type="email"
+            id="email"
+            placeholder="Client Email"
+            required>
+
+            <input
+            type="text"
+            id="source"
+            placeholder="Lead Source"
+            required>
+
+            <input
+            type="date"
+            id="followup_date">
+
+            <button type="submit">
+                Add Lead
+            </button>
+
+        </form>
+
+        <!-- LEADS DISPLAY -->
+
+        <div id="leadList"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
