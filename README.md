@@ -9,3 +9,5 @@ Repository scaffold with `backend/` and `frontend/` folders.
 <img width="1900" height="952" alt="image" src="https://github.com/user-attachments/assets/d2e18733-d46a-44e0-b0d6-e3fe5f75b196" />
 <img width="1902" height="952" alt="image" src="https://github.com/user-attachments/assets/091faccd-6c2a-4414-a58c-e3e9c74b3754" />
 
+<img width="1732" height="662" alt="image" src="https://github.com/user-attachments/assets/691e51e3-9661-4599-8816-9bc3e13e10b6" />
+
